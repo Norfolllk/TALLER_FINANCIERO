@@ -28,4 +28,14 @@ public class Banco {
 		cuenta.setPropietario(cliente);
 		return cuenta;
 	}
+	
+	public boolean depositar(double monto, Cuenta cuenta) {
+
+		if (monto > 0) {
+			cuenta.setSaldoActual(cuenta.getSaldoActual() + monto);
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
