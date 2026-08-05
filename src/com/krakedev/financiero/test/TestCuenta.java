@@ -27,6 +27,16 @@ public class TestCuenta {
 		boolean depositoInvalido = banco.depositar(-50.0, cuenta2);
 		System.out.println("Deposito de -50.0 en cuenta2 -> " + depositoInvalido);
 		cuenta2.imprimir();
-	}
 
+		System.out.println();
+		System.out.println("--- Pruebas de retiro ---");
+
+		boolean retiroValido = banco.retirar(100.0, cuenta1);
+		System.out.println("Retiro de 100.0 en cuenta1 -> " + retiroValido);
+		cuenta1.imprimir();
+
+		boolean retiroExcedeSaldo = banco.retirar(1000.0, cuenta1);
+		System.out.println("Retiro de 1000.0 en cuenta1 -> " + retiroExcedeSaldo);
+		cuenta1.imprimir();
+	}
 }
