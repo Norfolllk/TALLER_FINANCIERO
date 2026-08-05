@@ -12,6 +12,9 @@ public class Cliente {
 		this.apellido = apellido;
 	}
 
+	public Cliente() {
+	}
+
 	public String getCedula() {
 		return cedula;
 	}
@@ -39,5 +42,4 @@ public class Cliente {
 	public void imprimir() {
 		System.out.println("Cedula: " + cedula + " , Nombre: " + nombre + " , Apellido: " + apellido);
 	}
-
 }
