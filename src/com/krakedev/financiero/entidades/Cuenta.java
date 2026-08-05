@@ -11,6 +11,7 @@ public class Cuenta {
 		this.id = id;
 		this.saldoActual = 0;
 		this.tipo = "A";
+		this.propietario = new Cliente(); // en Cliente no existe el constructor vacío, por lo tanto lo agregamos arriba
 	}
 
 	public String getId() {
